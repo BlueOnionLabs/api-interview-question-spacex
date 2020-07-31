@@ -21,9 +21,9 @@ We want to have an *hourly* record of the starlink satellite locations (latitude
 
   To complete this task, your code will need to be able to insert rows into a database (of your choice!) Feel free to model it however you choose
   
-  Bonus:
-    - Tests. Feel free to test what you think needs testing, and ignoring what you think doesn't need it
-    - Setup the database and task in a docker compose container so that we can run it on our end, as well
+  *Bonus points*:
+    1. Tests. Feel free to test what you think needs testing, and ignoring what you think doesn't need it
+    2. Setup the database and task in a docker compose container so that we can run it on our end, as well
 
 
 2. Write a method Get_All_Starlinks that accepts (<launch_id>, <date_time>) and returns all the starlink satellite positions for that given point in time
@@ -33,7 +33,7 @@ launch_id = "5eb87d30ffd86e000604b378"
 date_time = "2020-07-30 18:17:33"
 
 Get_All_Starlinks(launch_id, date_time)
-should give me back a list of objects (JSON, or Python objects...whichever is most convenient!) representing the starlink satellite positions at that <date_time> for the given <launch_id>
+This should give me back a list of objects (JSON, or Python objects...whichever is most convenient!) representing the starlink satellite positions at that <date_time> for the given <launch_id>
 
 
 
