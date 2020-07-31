@@ -18,6 +18,7 @@ We want to have an *hourly* record of the starlink satellite locations (latitude
 ## The Task:
 
 **Task 1**
+
 Create a task(s) to import the API results for 'launches' and 'starlink' data into a database. Keep in mind that you'll need to keep track of 'starlink' longitude/latitude over time, as described in the 'Problem' section. If we were to put this in production, we'd potentially put it behind a scheduler task, but for the purposes of this task, we will just assume that it's runnable from a python shell.
 
 To complete this task, your code will need to be able to insert rows into a database (of your choice!) Feel free to model it however you choose
@@ -28,6 +29,7 @@ To complete this task, your code will need to be able to insert rows into a data
 
 
 **Task 2**
+
 Write a method Get_All_Starlinks that accepts (<launch_id>, <date_time>) and returns all the starlink satellite positions for that given point in time
 
 Example:
