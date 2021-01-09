@@ -22,7 +22,7 @@ Create a script/application to import the API results for 'starlink' data into m
 - longitude
 - an integer N
 
-Return value: 'N' number of satellites sorted in order of which satellite is *closest in physical distance* to the input point (specified via the latitude and longitude). We essentially want to be able to ingest the satellite data, then find out which one is closest to a given point at any given time.
+Return value: the first 'N' number of satellites which are *closest in physical distance* to the input latitude/longitude. We essentially want to be able to ingest the satellite data, then find out which one is closest to a given point at any given time.
 
 Do not worry about going deep into the math of distances between points on the ground and space in terms of lat/lon. You can assume the satellite positions (in lat/lon) and the position we compare it to are at the same altitude. No need to be too exact with this one :)
 You will find the following package useful here: https://github.com/mapado/haversine
