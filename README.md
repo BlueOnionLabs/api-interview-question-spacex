@@ -29,3 +29,13 @@ You will find the following package useful here: https://github.com/mapado/haver
 
 *Bonus points*:
 - Tests. Feel free to test what you think needs testing, and make a note of what you think doesn't need any testing (and why!)
+
+### How to Submit
+
+1. Run through it one last time to make sure it works!
+2. Push up to your forked repo one last time (or save your working directory to a 'zip')
+3. Reach out to us with your solution
+
+### Questions
+
+If you have any questions at all during the challenge do not hesitate to reach out! Whether it be a question about the requirements, submitting, anything, just send us a note!
