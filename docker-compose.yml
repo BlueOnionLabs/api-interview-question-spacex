@@ -1,0 +1,20 @@
+version: '3.1'
+services:
+  postgres:
+    image: "postgres:12.3"
+    shm_size: 1g
+    networks:
+        - blueonion-network
+    ports:
+        - "5432:5432"
+    restart: always
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+    environment:
+        - POSTGRES_DB=blueonion
+        - POSTGRES_USER=blueonion
+        - POSTGRES_PASSWORD=blueonion
+
+networks:
+    blueonion-network:
+        driver: bridge
