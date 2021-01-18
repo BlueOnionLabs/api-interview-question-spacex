@@ -2,7 +2,7 @@
 
 Hey! We are stoked that you are interested in joining the team at Blue Onion Labs.
 
-We have crafted the following test to see how you approach pulling and manipulating of data. We want to get a general idea of how you approach some common types of problems that we encounter here at Blue Onion (we are really proficient at integrations!)
+We have crafted the following test to see how you approach pulling and manipulating of data. We want to get a general idea of how you approach some common types of problems that we encounter here at Blue Onion (we are really proficient at integrations!). There is mention of Ruby/Python libraries in the notes, but feel free to use whatever backend code/framework that you like! For the frontend, React would be ideal.
 
 ## Background
 [spacexdata.com](https://docs.spacexdata.com/) provides an API to query attributes about SpaceX launches (https://github.com/r-spacex/SpaceX-API/blob/master/docs/v4/README.md). For this exercise we are going to be working with one resource in particular:
@@ -22,8 +22,9 @@ Create a runnable script to import the API results for 'starlink' data into memo
 
 The script should return the first 'N' number of satellites which are *closest in physical distance* to the input latitude/longitude. We essentially want to be able to ingest the satellite data, then find out which one is closest to a given point at any given time. Do not worry about going deep into the math of distances between points on the ground and space in terms of lat/lon. You can assume the satellite positions (in lat/lon) and the position we compare it to are at the same altitude. No need to be too exact with this one :)
 You will find the following package(s) useful:
-    - For Python: https://github.com/mapado/haversine
-    - For Ruby: https://github.com/kristianmandrup/haversine
+    
+  - For Python: https://github.com/mapado/haversine
+  - For Ruby: https://github.com/kristianmandrup/haversine
 
 *Bonus points*:
 - Tests. Feel free to test (or just make notes about) what you think needs testing, and make a note of what you think doesn't need any testing (and why!)
