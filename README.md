@@ -26,9 +26,6 @@ You will find the following package(s) useful:
   - For Python: https://github.com/mapado/haversine
   - For Ruby: https://github.com/kristianmandrup/haversine
 
-*Bonus points*:
-- Tests. Feel free to test (or just make notes about) what you think needs testing, and make a note of what you think doesn't need any testing (and why!)
-
 ## The Task (Part 2):
 Put this logic into a webserver and put it behind an endpoint. Feel free to use whatever framework you're most comfortable with.
 
@@ -44,6 +41,10 @@ To do this we'll want to:
   - From the client app, call the endopint from 'Part 2' and display those points on the react-globe. With whatever number N you feel like.
 
 After this, you're done! No need for the code to be perfect. If you have thoughts about how things could be better, just make notes/comments as you go. Given the time constraint, the quality of the code isn't the most important thing.
+
+
+*Bonus points*:
+- Tests. Feel free to test (or just make notes about) what you think needs testing, and make a note of what you think doesn't need any testing (and why!)
 
 ### How to Submit
 
