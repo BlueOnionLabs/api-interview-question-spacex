@@ -27,10 +27,11 @@ The script should return the first 'N' number of satellites which are *closest i
 
 ### Assumptions
 Do not worry about going deep into the math of distances between points on the ground and space in terms of lat/lon. You can assume the satellite positions (in lat/lon) and the position we compare it to are at the same altitude. No need to be too exact with this one :)
+
 You will find the following package(s) useful:
     
-  - For Python: https://github.com/mapado/haversine
-  - For Ruby: https://github.com/kristianmandrup/haversine
+  - Python: https://github.com/mapado/haversine
+  - Ruby: https://github.com/kristianmandrup/haversine
 
 ## The Task (Part 2):
 Put this logic into a webserver and put it behind an endpoint. Feel free to use whatever framework you're most comfortable with.
