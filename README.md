@@ -5,8 +5,8 @@ Hey! We are stoked that you are interested in joining the team at Blue Onion Lab
 We have crafted the following test to see how you approach pulling and manipulating of data. We want to get a general idea of how you approach some common types of problems that we encounter here at Blue Onion (we are really proficient at integrations!). There is mention of Ruby/Python libraries in the notes, but feel free to use whatever backend code/framework that you like! For the frontend, React would be ideal.
 
 ## Background
-[spacexdata.com](https://docs.spacexdata.com/) provides an API to query attributes about SpaceX launches (https://github.com/r-spacex/SpaceX-API/blob/master/docs/v4/README.md). For this exercise we are going to be working with one resource in particular:
-- The [Starlink Schema](https://github.com/r-spacex/SpaceX-API/blob/master/docs/v4/starlink/schema.md)
+[spacexdata.com](https://docs.spacexdata.com/) provides an API to query attributes about SpaceX launches (https://github.com/r-spacex/SpaceX-API/tree/master/docs#rspacex-api-docs). For this exercise we are going to be working with one resource in particular:
+- The [Starlink Schema](https://github.com/r-spacex/SpaceX-API/blob/master/docs/starlink/v4/schema.md)
   Some relevant fields to note in the reponse:
     - longitude
     - latitude
@@ -15,12 +15,18 @@ We have crafted the following test to see how you approach pulling and manipulat
 We want to be able to import the SpaceX Satellite data, and then we want to find out which satellites are physically closest to a given point.
 
 ## The Task (Part 1):
-Create a runnable script to import the API results for 'starlink' data into memory. Have the script accept the following arguments:
+### Goal
+We want to be able to ingest the satellite data, then find out which one is closest to a given point at any given time. Create a runnable script to import the API results for 'starlink' data into memory using the https://api.spacexdata.com/v4/starlink endpoint. Have the script (or method) accept three argument following arguments:
 - latitude
 - longitude
 - an integer N
 
-The script should return the first 'N' number of satellites which are *closest in physical distance* to the input latitude/longitude. We essentially want to be able to ingest the satellite data, then find out which one is closest to a given point at any given time. Do not worry about going deep into the math of distances between points on the ground and space in terms of lat/lon. You can assume the satellite positions (in lat/lon) and the position we compare it to are at the same altitude. No need to be too exact with this one :)
+### Notes
+
+The script should return the first 'N' number of satellites which are *closest in physical distance* to the input latitude/longitude. We essentially want to be able to ingest the satellite data, then find out which one is closest to a given point at any given time. 
+
+### Assumptions
+Do not worry about going deep into the math of distances between points on the ground and space in terms of lat/lon. You can assume the satellite positions (in lat/lon) and the position we compare it to are at the same altitude. No need to be too exact with this one :)
 You will find the following package(s) useful:
     
   - For Python: https://github.com/mapado/haversine
@@ -41,7 +47,6 @@ To do this we'll want to:
   - From the client app, call the endopint from 'Part 2' and display those points on the react-globe. With whatever number N you feel like.
 
 After this, you're done! No need for the code to be perfect. If you have thoughts about how things could be better, just make notes/comments as you go. Given the time constraint, the quality of the code isn't the most important thing.
-
 
 *Bonus points*:
 - Tests. Feel free to test (or just make notes about) what you think needs testing, and make a note of what you think doesn't need any testing (and why!)
