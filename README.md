@@ -40,7 +40,9 @@ The endpoint should accept an integer parameter 'N' (as a query param or in the 
 The endpoint should return JSON that is an array of longitude/latitude points.
 
 ## The Task (Part 3):
-This is the fun part! Plot those points on an interactive globe. Don't worry, there is a library to do the heavy lifting here: https://github.com/chrisrzhou/react-globe
+This is the fun part! Plot those points on an interactive globe. Don't worry, there are some libraries available to do the heavy lifting here:
+  - https://github.com/chrisrzhou/react-globe
+  - https://github.com/vasturiano/react-globe.gl
 
 To do this we'll want to:
   - Create a super lightweight React app (create-react-app or any other generators are fine).
